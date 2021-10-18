@@ -1,5 +1,5 @@
 ---
-title: "Reproducible science workshop @ XTBG 2021"
+title: "Reproducible science workshop XTBG 2021"
 description: "A four-day workshop on reproducible science"
 site: distill::distill_website
 ---
@@ -24,7 +24,7 @@ Where: [XTBG](http://english.xtbg.cas.cn/)
 
 # Timeline
 
-* Motivations [[lecture](slides/0_introduction.html)]
+* Motivations [[lecture](slides/0_introduction.html)]]
 * Manipulating data in the `tidyverse` [[lecture](slides/3_dplyr.html) | [practical](practicals/1_datamanipulation.html) | [solutions](practicals/1_datamanipulation_solution.html) | [video](https://youtu.be/xfMbzUb5iKk?t=752)]
 * Visualising data in the `tidyverse` [[lecture](slides/4_ggplot.html) | [practical](practicals/2_datavisualisation.html) | [solutions](practicals/2_datavisualisation_solution.html) | [video](https://youtu.be/xfMbzUb5iKk?t=7381)]
 * Lunch break

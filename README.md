@@ -1,4 +1,4 @@
-# Reproducible science with R and RStudio
+# Reproducible science
 
 This repository holds the source materials used at https://dossag.github.io/reproducible-science-workshop-XTBG-2021
  

@@ -1,7 +1,7 @@
 # Reproducible science with R and RStudio
 
-This repository holds the source materials used at https://oliviergimenez.github.io/reproducible-science-workshop/
+This repository holds the source materials used at https://dossag.github.io/reproducible-science-workshop-XTBG-2021
  
 ## Reuse
 
-Text and figures are licensed under Creative Commons Attribution [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any computer code (R, HTML, CSS, etc.) in slides and worksheets, including in slide and worksheet sources, is also licensed under [MIT](https://github.com/oliviergimenez/reproducible-science-workshop/blob/master/LICENSE.md).
+Text and figures are licensed under Creative Commons Attribution [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Any computer code (R, HTML, CSS, etc.) in slides and worksheets, including in slide and worksheet sources, is also licensed under [MIT](https://github.com/dossa/reproducible-science-workshop-XTBG-2021/blob/master/LICENSE.md).

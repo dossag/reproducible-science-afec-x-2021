@@ -1,6 +1,6 @@
-name: "reproducible-science-workshop"
-title: "Reproducible science workshop"
-description: "A one-day workshop with R and RStudio"
+name: "reproducible-science-workshop-XTBG-2021"
+title: "Reproducible science workshop @ XTBG 2021"
+description: "A four-day workshop on Reproducible science"
 output_dir: "docs"
 theme: "theme.css"
 #repository_url: https://github.com/wilkelab/SDS375

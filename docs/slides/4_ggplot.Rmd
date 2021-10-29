@@ -1,18 +1,38 @@
 ---
-title: "Introduction to the Tidyverse"
-subtitle: "Data visualisation"
-author: "Olivier Gimenez"
-date: "last updated: `r Sys.Date()`"
+title: "Reproducible science: Module4"
+subtitle: "Data visualisation: the power of ggplots"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
+date: "2021/09/28 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["assets/css/rutgers-tidyverse.css", "assets/css/rutgers-fonts_og.css"]
-    lib_dir: "assets/libs"
+    lib_dir: libs
+    #chakra: libs/remark-latest.min.js Able this if you want to make slide to work offline
+    #seal: false ## To set off the first slide renders by xaringan
     nature:
+      #ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-# to convert html output into pdf,
-# xaringan::decktape("file://.../filename.html", "filename.pdf", docker = FALSE)
+      #countdown: 60000
+      #autoplay: 30000
+      ## for highlighting use the following * at the beginning, or are wrapped in {{ }}, or at the end #<<
+      ## highlight.output = c(1, 3) means highlighting the first and third line.
+      # xaringan::summon_remark() to make slide work offline
+ ## https://bookdown.org/yihui/rmarkdown/xaringan-preview.html for more information        
+ ## Three dashes (---) for seperating slide
+ ## two dash (--) to introduce next line on a slide
+ ## One dash (-) for bullet point
+ ## .footnote[ AND PUT WHAT YOU WANT IN HERE]
+ ## <sup>A</sup> for putting A in upperscript. This html language
+ ## ![tidyverse logo](tidyverse.png)
+ ##---
+
+##background-image: url(https://github.com/rstudio/hex-stickers/raw/master/SVG/tidyverse.svg?sanitize=true)
+##background-size: 550px
+##background-position: 50% 50%
+##---
+## Check for how to keep special characters like chinese, french e accent aigue etc...
 ---
 
 ```{r global_options, include=FALSE}

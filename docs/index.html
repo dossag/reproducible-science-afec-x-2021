@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -55,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -76,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -84,30 +85,31 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-  <!--radix_placeholder_meta_tags-->
-  <title>Reproducible science workshop @ XTBG 2021</title>
 
-  <meta property="description" itemprop="description" content="A four-day workshop on Reproducible science"/>
+  <!--radix_placeholder_meta_tags-->
+  <title>Reproducible science workshop @ XTBG 2021: Reproducible science workshop XTBG 2021</title>
+
+  <meta property="description" itemprop="description" content="A four-day workshop on reproducible science"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Reproducible science workshop @ XTBG 2021"/>
+  <meta property="og:title" content="Reproducible science workshop @ XTBG 2021: Reproducible science workshop XTBG 2021"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A four-day workshop on Reproducible science"/>
+  <meta property="og:description" content="A four-day workshop on reproducible science"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Reproducible science workshop @ XTBG 2021"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Reproducible science workshop @ XTBG 2021"/>
-  <meta property="twitter:description" content="A four-day workshop on Reproducible science"/>
+  <meta property="twitter:title" content="Reproducible science workshop @ XTBG 2021: Reproducible science workshop XTBG 2021"/>
+  <meta property="twitter:description" content="A four-day workshop on reproducible science"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Reproducible science workshop"]},{"type":"character","attributes":{},"value":["A one-day workshop with `R` and `RStudio`"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Reproducible science workshop XTBG 2021"]},{"type":"character","attributes":{},"value":["A four-day workshop on reproducible science"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -454,7 +456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1861,7 +1863,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2357,7 +2362,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2377,7 +2382,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Reproducible science workshop @ XTBG 2021","description":"A four-day workshop on Reproducible science","authors":[]}
+{"title":"Reproducible science workshop XTBG 2021","description":"A four-day workshop on reproducible science","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2435,27 +2440,27 @@ Worksheets
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Reproducible science workshop @ XTBG 2021</h1>
+<h1>Reproducible science workshop XTBG 2021</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>A four-day workshop on Reproducible science</p>
+<p>A four-day workshop on reproducible science</p>
 </div>
 
 
 <div class="d-article">
-<p>Who: <a href="https://dossag.github.io/">G.G.O. Dossa</a><br />
-When: 9am-5:30pm every day from October 19-22, 2021<br />
-Where: XTBG Darwing Meeting room<br />
+<p>Who: <a href="https://dossag.github.io/">G.G.O Dossa</a><br />
+When: 9am-5:30 pm every day from October 19-22, 2021<br />
+Where: <a href="http://english.xtbg.cas.cn/">XTBG</a><br />
 <!-- Syllabus: [click here](syllabus.html)   --> <!-- Upcoming lectures and assignments: [click here](schedule.html)   --></p>
 <h1 id="timeline">Timeline</h1>
 <ul>
-<li>Motivations [<a href="slides/0_introduction.html">lecture</a>] </li>
-<li>Manipulating data in the <code>tidyverse</code> [<a href="slides/3_dplyr.html">lecture</a> | <a href="practicals/1_datamanipulation.html">practical</a> | <a href="practicals/1_datamanipulation_solution.html">solutions</a> | <a href="https://youtu.be/xfMbzUb5iKk?t=752">video</a>]</li>
-<li>Visualising data in the <code>tidyverse</code> [<a href="slides/4_ggplot.html">lecture</a> | <a href="practicals/2_datavisualisation.html">practical</a> | <a href="practicals/2_datavisualisation_solution.html">solutions</a> | <a href="https://youtu.be/xfMbzUb5iKk?t=7381">video</a>]</li>
+<li>Motivations [<a href="slides/0_introduction.html">lecture</a>]]</li>
+<li>Manipulating data in the <code>tidyverse</code> [<a href="slides/3_dplyr.html">lecture</a> | <a href="practicals/1_datamanipulation.html">practical</a> | <a href="practicals/1_datamanipulation_solution.html">solutions</a> | <a href="">video</a>]</li>
+<li>Visualising data in the <code>tidyverse</code> [<a href="slides/4_ggplot.html">lecture</a> | <a href="practicals/2_datavisualisation.html">practical</a> | <a href="practicals/2_datavisualisation_solution.html">solutions</a> | <a href="">video</a>]</li>
 <li>Lunch break</li>
-<li>Writing dynamic and reproducible documents with <code>R Markdown</code> [<a href="slides/2_markdown.html">lecture</a> | <a href="practicals/3_rmarkdown.html">practical</a> | <a href="practicals/3_rmarkdownsolution.Rmd">solutions</a> | <a href="https://youtu.be/nnwxpD9TMQw?t=10">video</a>]</li>
-<li>Versioning with <code>Git</code> and <code>GitHub</code> in <code>RStudio</code> [<a href="slides/1_github.html">lecture</a> | <a href="practicals/4_versioncontrol.html">practical</a> | <a href="https://youtu.be/nnwxpD9TMQw?t=5033">video</a>]</li>
-<li>Take-home messages [<a href="slides/5_conclusion.html">lecture</a> | <a href="https://youtu.be/nnwxpD9TMQw?t=10355">video</a>]</li>
+<li>Writing dynamic and reproducible documents with <code>R Markdown</code> [<a href="slides/2_markdown.html">lecture</a> | <a href="practicals/3_rmarkdown.html">practical</a> | <a href="practicals/3_rmarkdownsolution.Rmd">solutions</a> | <a href="">video</a>]</li>
+<li>Versioning with <code>Git</code> and <code>GitHub</code> in <code>RStudio</code> [<a href="slides/1_github.html">lecture</a> | <a href="practicals/4_versioncontrol.html">practical</a> | <a href="">video</a>]</li>
+<li>Take-home messages [<a href="slides/5_conclusion.html">lecture</a> | <a href="">video</a>]</li>
 </ul>
 <h1 id="requirements">Requirements</h1>
 <ul>
@@ -2474,7 +2479,7 @@ Where: XTBG Darwing Meeting room<br />
 <h2 class="appendix" id="corrections">Corrections</h2>
 <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/dossag/reproducible-science-workshop-XTBG-2021/issues">create an issue</a> on the source repository.</p>
 <h2 class="appendix" id="reuse">Reuse</h2>
-<p>Text and figures are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Any computer code (R, HTML, CSS, etc.) in slides and worksheets, including in slide and worksheet sources, is also licensed under <a href="https://github.com/oliviergimenez/reproducible-science-workshop/blob/master/LICENSE.md">MIT</a>.</p>
+<p>Text and figures are licensed under Creative Commons Attribution <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Any computer code (R, HTML, CSS, etc.) in slides and worksheets, including in slide and worksheet sources, is also licensed under <a href="https://github.com/dossag/reproducible-science-workshop-XTBG-2021/blob/master/LICENSE.md">MIT</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

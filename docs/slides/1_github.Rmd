@@ -1,17 +1,17 @@
 ---
 title: "Introduction to Git and GitHub with RStudio"
-author: "Olivier Gimenez"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 date: "last updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: [default, metropolis, assets/css/footer.css, metropolis-fonts, assets/css/metropolis-ak_dc.css]
+   # css: [default, metropolis, assets/css/footer.css, metropolis-fonts, assets/css/metropolis-ak_dc.css]
     lib_dir: libs
     nature:
       beforeInit: "https://platform.twitter.com/widgets.js"
       highlightStyle: github
-      titleSlideClass: [middle, left]
+      #titleSlideClass: [middle, left]
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
 ---
 layout: true
 

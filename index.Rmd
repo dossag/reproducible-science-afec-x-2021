@@ -25,12 +25,12 @@ Where: [XTBG](http://english.xtbg.cas.cn/)
 # Timeline
 
 * Motivations [[lecture](slides/0_introduction.html)]]
-* Manipulating data in the `tidyverse` [[lecture](slides/3_dplyr.html) | [practical](practicals/1_datamanipulation.html) | [solutions](practicals/1_datamanipulation_solution.html) | [video](https://youtu.be/xfMbzUb5iKk?t=752)]
-* Visualising data in the `tidyverse` [[lecture](slides/4_ggplot.html) | [practical](practicals/2_datavisualisation.html) | [solutions](practicals/2_datavisualisation_solution.html) | [video](https://youtu.be/xfMbzUb5iKk?t=7381)]
+* Manipulating data in the `tidyverse` [[lecture](slides/3_dplyr.html) | [practical](practicals/1_datamanipulation.html) | [solutions](practicals/1_datamanipulation_solution.html) | [video]()]
+* Visualising data in the `tidyverse` [[lecture](slides/4_ggplot.html) | [practical](practicals/2_datavisualisation.html) | [solutions](practicals/2_datavisualisation_solution.html) | [video]()]
 * Lunch break
-* Writing dynamic and reproducible documents with `R Markdown` [[lecture](slides/2_markdown.html) | [practical](practicals/3_rmarkdown.html) | [solutions](practicals/3_rmarkdownsolution.Rmd) | [video](https://youtu.be/nnwxpD9TMQw?t=10)]
-* Versioning with `Git` and `GitHub` in `RStudio` [[lecture](slides/1_github.html) | [practical](practicals/4_versioncontrol.html) | [video](https://youtu.be/nnwxpD9TMQw?t=5033)]
-* Take-home messages [[lecture](slides/5_conclusion.html) | [video](https://youtu.be/nnwxpD9TMQw?t=10355)]
+* Writing dynamic and reproducible documents with `R Markdown` [[lecture](slides/2_markdown.html) | [practical](practicals/3_rmarkdown.html) | [solutions](practicals/3_rmarkdownsolution.Rmd) | [video]()]
+* Versioning with `Git` and `GitHub` in `RStudio` [[lecture](slides/1_github.html) | [practical](practicals/4_versioncontrol.html) | [video]()]
+* Take-home messages [[lecture](slides/5_conclusion.html) | [video]()]
 
 # Requirements
 

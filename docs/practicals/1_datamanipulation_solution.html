@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Data manipulation - solutions</title>
+    <title>Reproducible science: Module4</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Olivier Gimenez" />
-    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <meta name="author" content="Gbadamassi G.O. Dossa" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link rel="stylesheet" href="slides-theme.css" type="text/css" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
-class: center, middle, title-slide
+class: center, middle, inverse, title-slide
 
-# Data manipulation - solutions
-### Olivier Gimenez
-### last updated: 2021-02-26
+# Reproducible science: Module4
+## Exercice2 Data manipulation - solutions
+### <a href="https://scholar.google.com/citations?user=w20AkZcAAAAJ&amp;hl=en">Gbadamassi G.O. Dossa</a>
+### Xishuangbanna Tropical Botanical Garden, XTBG-CAS
+### 2021/09/28 (updated: 2021-10-30)
 
 ---
 
@@ -43,7 +45,7 @@ penguins # display data
 ##  8 Adelie  Torgersen           39.2          19.6               195        4675
 ##  9 Adelie  Torgersen           34.1          18.1               193        3475
 ## 10 Adelie  Torgersen           42            20.2               190        4250
-## # … with 334 more rows, and 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;
+## # ... with 334 more rows, and 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;
 ```
 ]
 
@@ -60,14 +62,14 @@ penguins %&gt;% glimpse() # display data
 ```
 ## Rows: 344
 ## Columns: 8
-## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…
+## $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel~
+## $ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse~
+## $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, ~
+## $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, ~
+## $ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186~
+## $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, ~
+## $ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male~
+## $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007~
 ```
 ]
 
@@ -108,7 +110,7 @@ dat # nb of penguins
 ##  8 Adelie  Torgersen           41.1        3200
 ##  9 Adelie  Torgersen           38.6        3800
 ## 10 Adelie  Torgersen           34.6        4400
-## # … with 323 more rows
+## # ... with 323 more rows
 ```
 ]
 
@@ -125,7 +127,7 @@ dat %&gt;% count(species)
 ```
 ## # A tibble: 3 x 2
 ##   species       n
-## * &lt;fct&gt;     &lt;int&gt;
+##   &lt;fct&gt;     &lt;int&gt;
 ## 1 Adelie      146
 ## 2 Chinstrap    68
 ## 3 Gentoo      119
@@ -162,7 +164,7 @@ dat %&gt;% count(island) # nb of island, and penguins per island
 ```
 ## # A tibble: 3 x 2
 ##   island        n
-## * &lt;fct&gt;     &lt;int&gt;
+##   &lt;fct&gt;     &lt;int&gt;
 ## 1 Biscoe      163
 ## 2 Dream       123
 ## 3 Torgersen    47
@@ -218,7 +220,7 @@ dat %&gt;%
 ##  8 Adelie  Torgersen           41.1        3200   4207.
 ##  9 Adelie  Torgersen           38.6        3800   4207.
 ## 10 Adelie  Torgersen           34.6        4400   4207.
-## # … with 323 more rows
+## # ... with 323 more rows
 ```
 ]
 
@@ -269,7 +271,7 @@ dat %&gt;%
 ##  8 Adelie  Torgersen           41.1        3200   3706.
 ##  9 Adelie  Torgersen           38.6        3800   3706.
 ## 10 Adelie  Torgersen           34.6        4400   3706.
-## # … with 323 more rows
+## # ... with 323 more rows
 ```
 ]
 
@@ -290,7 +292,7 @@ dat %&gt;%
 ```
 ## # A tibble: 3 x 2
 ##   species   mean_bm
-## * &lt;fct&gt;       &lt;dbl&gt;
+##   &lt;fct&gt;       &lt;dbl&gt;
 ## 1 Adelie      3706.
 ## 2 Chinstrap   3733.
 ## 3 Gentoo      5092.
@@ -312,7 +314,7 @@ dat %&gt;%
 ```
 ## # A tibble: 3 x 3
 ##   species   bill_length_mm body_mass_g
-## * &lt;fct&gt;              &lt;dbl&gt;       &lt;dbl&gt;
+##   &lt;fct&gt;              &lt;dbl&gt;       &lt;dbl&gt;
 ## 1 Adelie              38.8       3706.
 ## 2 Chinstrap           48.8       3733.
 ## 3 Gentoo              47.6       5092.
@@ -335,7 +337,7 @@ dat %&gt;%
 ```
 ## # A tibble: 3 x 3
 ##   species   bill_length_mm body_mass_g
-## * &lt;fct&gt;              &lt;dbl&gt;       &lt;dbl&gt;
+##   &lt;fct&gt;              &lt;dbl&gt;       &lt;dbl&gt;
 ## 1 Adelie              38.8       3706.
 ## 2 Chinstrap           48.8       3733.
 ## 3 Gentoo              47.6       5092.
@@ -344,10 +346,9 @@ dat %&gt;%
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
-"slideNumberFormat": ""
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

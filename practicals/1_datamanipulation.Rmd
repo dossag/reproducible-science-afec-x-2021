@@ -1,13 +1,13 @@
 ---
 title: "Data manipulation"
-author: "Olivier Gimenez"
+author: "[**_Gbadamassi G.O. Dossa_**](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 date: "last updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     css: [default, "slides-theme.css"]
     lib_dir: libs
     nature:
-      ratio: '16:9'
+      #ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: ''

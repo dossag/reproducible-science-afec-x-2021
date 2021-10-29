@@ -1,13 +1,16 @@
 ---
-title: "Writing dynamic and reproducible documents"
-subtitle: "An introduction to R Markdown"
-author: "Olivier Gimenez"
-date: "last updated: `r Sys.Date()`"
+title: "Reproducible science workshop: Module6"
+subtitle: "Markdown"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
+date: "2021/10/1 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
-    css: ["assets/css/rutgers-rmarkdown.css", "assets/css/rutgers-fonts_og.css"]
-    lib_dir: "assets/libs"
+    lib_dir: libs
+    #chakra: libs/remark-latest.min.js Able this if you want to make slide to work offline
+    #seal: false ## To set off the first slide renders by xaringan
     nature:
+      #ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -404,7 +407,7 @@ class: inverse, center, middle
 
 --
 <ol>
-<li> Put references in a plain text file with the extension **.bib**, in **BibTex** format (my advice: use [Zotero](https://www.zotero.org))
+<li> Put references in a plain text file with the extension **.bib**, in **BibTex** format (Example of using [Zotero](https://www.zotero.org))
 </ol>
 ```bibtex
 *@article{Shea2014,

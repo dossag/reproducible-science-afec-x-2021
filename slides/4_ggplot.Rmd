@@ -20,8 +20,8 @@ knitr::opts_chunk$set(fig.path = 'assets/chunks/', cache.path = "assets/cache/",
 library(tidyverse)
 theme_set(theme_grey(base_size = 16))
 library(emo)
-#devtools::install_github("ropenscilabs/icon")
-#devtools::install_github("hadley/emo")
+devtools::install_github("ropenscilabs/icon")
+devtools::install_github("hadley/emo")
 citations_raw <- read_csv('https://raw.githubusercontent.com/oliviergimenez/intro_tidyverse/master/journal.pone.0166570.s001.CSV')
 citations <- citations_raw %>% #<<
   rename(journal = 'Journal identity',

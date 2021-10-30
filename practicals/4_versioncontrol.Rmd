@@ -21,6 +21,19 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```
 
 
+class: center
+## Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
+
+
 ## My first commit and push
 
 * Create a repository on GitHub, with a License (say MIT) and a Readme file. 

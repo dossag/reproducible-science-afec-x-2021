@@ -14,6 +14,18 @@ output:
       titleSlideClass: [center, middle]
 ---
 
+class: center
+## Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
+
 
 ## Context
 

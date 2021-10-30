@@ -3,8 +3,8 @@
   <head>
     <title>Writing reproducible documents</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Olivier Gimenez" />
-    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <meta name="author" content="Gbadamassi G.O. Dossa" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="slides-theme.css" type="text/css" />
   </head>
@@ -13,11 +13,22 @@
 class: center, middle, title-slide
 
 # Writing reproducible documents
-### Olivier Gimenez
-### last updated: 2021-02-26
+### <a href="https://scholar.google.com/citations?user=w20AkZcAAAAJ&amp;hl=en"><strong><em>Gbadamassi G.O. Dossa</em></strong></a>
+### last updated: 2021-10-31
 
 ---
 
+class: center
+## Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
 
 
 ## Context
@@ -33,6 +44,13 @@ The package `palmerpenguins` has two datasets.
 
 ```r
 library(palmerpenguins)
+```
+
+```
+## Warning: package 'palmerpenguins' was built under R version 4.1.1
+```
+
+```r
 data(package = 'palmerpenguins')
 ```
 
@@ -48,15 +66,15 @@ head(penguins)
 
 ```
 ## # A tibble: 6 x 8
-##   species island bill_length_mm bill_depth_mm flipper_length_… body_mass_g sex  
+##   species island bill_length_mm bill_depth_mm flipper_length_~ body_mass_g sex  
 ##   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;            &lt;int&gt;       &lt;int&gt; &lt;fct&gt;
-## 1 Adelie  Torge…           39.1          18.7              181        3750 male 
-## 2 Adelie  Torge…           39.5          17.4              186        3800 fema…
-## 3 Adelie  Torge…           40.3          18                195        3250 fema…
-## 4 Adelie  Torge…           NA            NA                 NA          NA &lt;NA&gt; 
-## 5 Adelie  Torge…           36.7          19.3              193        3450 fema…
-## 6 Adelie  Torge…           39.3          20.6              190        3650 male 
-## # … with 1 more variable: year &lt;int&gt;
+## 1 Adelie  Torge~           39.1          18.7              181        3750 male 
+## 2 Adelie  Torge~           39.5          17.4              186        3800 fema~
+## 3 Adelie  Torge~           40.3          18                195        3250 fema~
+## 4 Adelie  Torge~           NA            NA                 NA          NA &lt;NA&gt; 
+## 5 Adelie  Torge~           36.7          19.3              193        3450 fema~
+## 6 Adelie  Torge~           39.3          20.6              190        3650 male 
+## # ... with 1 more variable: year &lt;int&gt;
 ```
 ]
 
@@ -74,13 +92,13 @@ head(penguins_raw)
 ## # A tibble: 6 x 17
 ##   studyName `Sample Number` Species       Region Island  Stage   `Individual ID`
 ##   &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;          
-## 1 PAL0708                 1 Adelie Pengu… Anvers Torger… Adult,… N1A1           
-## 2 PAL0708                 2 Adelie Pengu… Anvers Torger… Adult,… N1A2           
-## 3 PAL0708                 3 Adelie Pengu… Anvers Torger… Adult,… N2A1           
-## 4 PAL0708                 4 Adelie Pengu… Anvers Torger… Adult,… N2A2           
-## 5 PAL0708                 5 Adelie Pengu… Anvers Torger… Adult,… N3A1           
-## 6 PAL0708                 6 Adelie Pengu… Anvers Torger… Adult,… N3A2           
-## # … with 10 more variables: Clutch Completion &lt;chr&gt;, Date Egg &lt;date&gt;,
+## 1 PAL0708                 1 Adelie Pengu~ Anvers Torger~ Adult,~ N1A1           
+## 2 PAL0708                 2 Adelie Pengu~ Anvers Torger~ Adult,~ N1A2           
+## 3 PAL0708                 3 Adelie Pengu~ Anvers Torger~ Adult,~ N2A1           
+## 4 PAL0708                 4 Adelie Pengu~ Anvers Torger~ Adult,~ N2A2           
+## 5 PAL0708                 5 Adelie Pengu~ Anvers Torger~ Adult,~ N3A1           
+## 6 PAL0708                 6 Adelie Pengu~ Anvers Torger~ Adult,~ N3A2           
+## # ... with 10 more variables: Clutch Completion &lt;chr&gt;, Date Egg &lt;date&gt;,
 ## #   Culmen Length (mm) &lt;dbl&gt;, Culmen Depth (mm) &lt;dbl&gt;,
 ## #   Flipper Length (mm) &lt;dbl&gt;, Body Mass (g) &lt;dbl&gt;, Sex &lt;chr&gt;,
 ## #   Delta 15 N (o/oo) &lt;dbl&gt;, Delta 13 C (o/oo) &lt;dbl&gt;, Comments &lt;chr&gt;

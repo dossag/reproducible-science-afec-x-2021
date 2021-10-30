@@ -1,7 +1,7 @@
 ---
 title: "Data exploration using the palmerpenguins dataset"
-author: "Olivier Gimenez"
-date: "10/25/2020"
+author: "[**_Gbadamassi G.O. Dossa_**](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+date: "last updated: `r Sys.Date()`"
 output:
   word_document: default
   pdf_document: default
@@ -12,6 +12,12 @@ bibliography: mabiblio.bib
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 ```
+
+# Acknowledgements
+The content of this module are based on materials from:
+
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+
 
 # Data exploration
 

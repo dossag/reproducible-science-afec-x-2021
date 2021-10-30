@@ -22,6 +22,19 @@ library(palmerpenguins)
 library(tidyverse)
 ```
 
+
+class: center
+## Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
+
 ## Question 1a 
 
 .tiny-font[

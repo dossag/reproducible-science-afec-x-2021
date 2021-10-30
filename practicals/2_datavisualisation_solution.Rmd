@@ -23,10 +23,8 @@ library(palmerpenguins)
 library(tidyverse)
 ```
 
----
-
 class: center
-# Acknowledgements
+## Acknowledgements
 The content of this module are based on materials from:
 
 .pull-right[

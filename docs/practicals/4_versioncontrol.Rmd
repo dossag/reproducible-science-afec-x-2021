@@ -1,6 +1,6 @@
 ---
 title: "Version control"
-author: "Olivier Gimenez"
+author: "[**_Gbadamassi G.O. Dossa_**](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 date: "last updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -20,6 +20,17 @@ output:
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```
 
+class: center
+## Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
 
 ## My first commit and push
 

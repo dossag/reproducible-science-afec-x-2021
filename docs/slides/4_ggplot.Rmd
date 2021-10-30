@@ -1,6 +1,6 @@
 ---
 title: "Reproducible science: Module4"
-subtitle: "Data visualisation: the power of ggplots"
+subtitle: "Data visualisation: the power of ggplot2"
 author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
 date: "2021/09/28 (updated: `r Sys.Date()`)"

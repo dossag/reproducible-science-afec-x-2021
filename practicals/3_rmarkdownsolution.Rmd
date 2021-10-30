@@ -3,9 +3,9 @@ title: "Data exploration using the palmerpenguins dataset"
 author: "[**_Gbadamassi G.O. Dossa_**](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 date: "last updated: `r Sys.Date()`"
 output:
-  word_document: default
+  #word_document: default
   pdf_document: default
-  html_document: default
+  #html_document: default
 bibliography: mabiblio.bib
 ---
 

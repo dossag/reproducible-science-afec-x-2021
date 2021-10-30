@@ -51,6 +51,6 @@ navbar:
         - text: "Practical 4: Version control"
           href: practicals/4_versioncontrol.html
     - icon: fab fa-github
-      href: https://github.com/dossag/reproducible-science-workshop-XTBG-2021
+      href: https://github.com/dossag
 output: distill::distill_article
 

@@ -7,7 +7,7 @@ output:
     css: [default, "slides-theme.css"]
     lib_dir: libs
     nature:
-      #ratio: '16:9'
+      ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: ''

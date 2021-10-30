@@ -1,8 +1,9 @@
 ---
 title: "Introduction to the Tidyverse"
 subtitle: "Data visualisation"
-author: "Olivier Gimenez"
-date: "last updated: `r Sys.Date()`"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
+date: "2021/10/1 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     css: ["assets/css/rutgers-tidyverse.css", "assets/css/rutgers-fonts_og.css"]
@@ -15,6 +16,18 @@ output:
 # xaringan::decktape("file://.../filename.html", "filename.pdf", docker = FALSE)
 ---
 
+class: center
+# Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+![olivier gimenez](img/oliviergimenez.png)
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+---
+
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(fig.path = 'assets/chunks/', cache.path = "assets/cache/", dpi = 300)
 library(tidyverse)
@@ -22,7 +35,17 @@ theme_set(theme_grey(base_size = 16))
 library(emo)
 devtools::install_github("ropenscilabs/icon")
 devtools::install_github("hadley/emo")
-citations_raw <- read_csv('https://raw.githubusercontent.com/oliviergimenez/intro_tidyverse/master/journal.pone.0166570.s001.CSV')
+# Set the url from where to download the data
+url<-"https://doi.org/10.1371/journal.pone.0166570.s001"
+# name the file to be downloaded and save as destfile object
+destfile <- "twitter_cit_data.csv"
+# Apply download.file function in R to download from url
+download.file(url, destfile)
+library(tidyverse)
+# Read the data file with read_csv() and save with name "citations_raw"
+citations_raw<-read_csv(file="twitter_cit_data.csv") #<<
+
+#citations_raw <- #read_csv('https://raw.githubusercontent.com/olivie#rgimenez/intro_tidyverse/master/journal.pone.01665#70.s001.CSV')
 citations <- citations_raw %>% #<<
   rename(journal = 'Journal identity',
        impactfactor = '5-year journal impact factor',

@@ -1,13 +1,15 @@
 ---
-title: "Workshop on reproducible science: Take-home messages"
-author: "Olivier Gimenez"
-date: "last updated: `r Sys.Date()`"
+title: "Workshop on reproducible science: Module 6"
+sub-title: "Conclusions"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
+date: "2021/10/1 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     css: [default, "slides-theme.css"]
     lib_dir: libs
     nature:
-      ratio: '16:9'
+      #ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: ''
@@ -18,6 +20,19 @@ output:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(comment = "")
 ```
+
+# Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+![olivier gimenez](img/oliviergimenez.png)
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
+---
+
 
 
 # Virtuous research cycle

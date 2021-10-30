@@ -7,7 +7,7 @@ theme: "theme.css"
 include: [".nojekyll"]
 navbar:
 #  logo:
-#    image: images/cefe.png
+#    image: images/cefe.png #
 #    href: https://www.cefe.cnrs.fr/en/
   source_url: true
   left:

@@ -24,17 +24,16 @@ library(emo)
 #devtools::install_github("hadley/emo")
 getwd()
 ```
-
----
 # Acknowledgements
 The content of this module are based on materials from:
 
 .pull-right[
-![olivier gimenez](oliviergimenez.png)
+![olivier gimenez](img/oliviergimenez.png)
 ]
 .pull-right[
 [olivier gimenez's materials](https://oliviergimenez.github.io/)
 ]
+
 ---
 
 # **Tidyverse**

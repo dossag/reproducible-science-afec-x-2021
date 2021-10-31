@@ -8,6 +8,7 @@ output:
     lib_dir: libs
     nature:
       ratio: '16:9'
+      #ratio: '16:9'
       highlightStyle: github
       highlightLines: true
       slideNumberFormat: ''
@@ -33,7 +34,6 @@ The content of this module are based on materials from:
 ]
 
 ---
-
 ## Question 1a: histogram of body mass
 
 .small-font[

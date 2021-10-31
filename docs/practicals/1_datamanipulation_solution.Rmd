@@ -18,10 +18,10 @@ output:
 #options(htmltools.dir.version = FALSE)
 #knitr::opts_chunk$set(comment = "", warning = FALSE, message = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-
 library(palmerpenguins)
 library(tidyverse)
 ```
+
 
 class: center
 ## Acknowledgements

@@ -1,6 +1,6 @@
 ---
 title: "Reproducible science afec XTBG 2021"
-description: "A four-day afec on reproducible science"
+description: "A two-day afec on reproducible science"
 site: distill::distill_website
 ---
 
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 Who: [G.G.O Dossa](https://dossag.github.io/)  
-When: 9am-5:30 pm every day from October 19-22, 2021  
+When: 9am-5:30 pm every day from November 2-4, 2021  
 Where: [XTBG](http://english.xtbg.cas.cn/)  
 <!-- Syllabus: [click here](syllabus.html)   -->
 <!-- Upcoming lectures and assignments: [click here](schedule.html)   -->
@@ -51,7 +51,7 @@ install.packages(c("tidyverse", "sf", "emo", "janitor", "palmerpenguins", "useth
 
 ## Corrections {.appendix}
 
-If you see mistakes or want to suggest changes, please [create an issue](https://github.com/dossag/reproducible-science-afec-XTBG-2021/issues) on the source repository.
+If you see mistakes or want to suggest changes, please [create an issue](https://github.com/dossag/reproducible-science-afec-X-2021/issues) on the source repository.
 
 ## Reuse {.appendix}
 

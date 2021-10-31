@@ -15,7 +15,6 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 
 # Acknowledgements
 The content of this module are based on materials from:
-
 [olivier gimenez's materials](https://oliviergimenez.github.io/)
 
 

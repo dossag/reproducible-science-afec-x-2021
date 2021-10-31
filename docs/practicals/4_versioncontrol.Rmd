@@ -20,6 +20,7 @@ output:
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```
 
+
 class: center
 ## Acknowledgements
 The content of this module are based on materials from:
@@ -31,6 +32,7 @@ The content of this module are based on materials from:
 ]
 
 ---
+
 
 ## My first commit and push
 

@@ -20,6 +20,18 @@ knitr::opts_chunk$set(echo = TRUE)
 library(magrittr)
 ```
 
+
+class: center
+# Acknowledgements
+The content of this module are based on materials from:
+
+.pull-right[
+![olivier gimenez](img/oliviergimenez.png)
+]
+.pull-right[
+[olivier gimenez's materials](https://oliviergimenez.github.io/)
+]
+
 ---
 # Credits
 

@@ -13,6 +13,7 @@ output:
       slideNumberFormat: ''
       titleSlideClass: [center, middle]
 ---
+
 class: center
 ## Acknowledgements
 The content of this module are based on materials from:

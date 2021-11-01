@@ -40,7 +40,7 @@ Anyone who carries out research either as student, or research staff and seeks g
 
 # Timeline
 
-* Motivations and intro [[Module1](docs/Module1_introduction.html)]]
+* Motivations and intro [[Module1](slides/Module1_introduction.html)]]
 * Manipulating data in the `tidyverse` [[Module]() | [practical]() | [solutions]() | [video]()]
 * Visualising data in the `tidyverse` [[Module]() | [practical]() | [solutions]() | [video]()]
 * Writing dynamic and reproducible documents with `R Markdown` [[Module]() | [practical]() | [solutions]() | [video]()]

@@ -2416,16 +2416,16 @@ Worksheets
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="docs/practicals/1_datamanipulation.html">Practical 1: Manipulating data</a>
-<a href="docs/practicals/1_datamanipulation_solution.html">Practical 1: Manipulating data - Solutions</a>
-<a href="docs/practicals/2_datavisualisation.html">Practical 2: Visualizing data</a>
-<a href="docs/practicals/2_datavisualisation_solution.html">Practical 2: Visualizing data - Solutions</a>
-<a href="docs/practicals/3_rmarkdown.html">Practical 3: Writing reproducible documents</a>
-<a href="docs/practicals/3_rmarkdownsolution.Rmd">Practical 3: Writing reproducible documents - Solutions</a>
-<a href="docs/practicals/3_rmarkdownsolution.html">Practical 3: Writing reproducible documents - Html output</a>
-<a href="docs/practicals/3_rmarkdownsolution.pdf">Practical 3: Writing reproducible documents - PDF output</a>
-<a href="docs/practicals/3_rmarkdownsolution.docx">Practical 3: Writing reproducible documents - Word output</a>
-<a href="docs/practicals/4_versioncontrol.html">Practical 4: Version control</a>
+<a href="practicals/1_datamanipulation.html">Practical 1: Manipulating data</a>
+<a href="practicals/1_datamanipulation_solution.html">Practical 1: Manipulating data - Solutions</a>
+<a href="practicals/2_datavisualisation.html">Practical 2: Visualizing data</a>
+<a href="practicals/2_datavisualisation_solution.html">Practical 2: Visualizing data - Solutions</a>
+<a href="practicals/3_rmarkdown.html">Practical 3: Writing reproducible documents</a>
+<a href="practicals/3_rmarkdownsolution.Rmd">Practical 3: Writing reproducible documents - Solutions</a>
+<a href="practicals/3_rmarkdownsolution.html">Practical 3: Writing reproducible documents - Html output</a>
+<a href="practicals/3_rmarkdownsolution.pdf">Practical 3: Writing reproducible documents - PDF output</a>
+<a href="practicals/3_rmarkdownsolution.docx">Practical 3: Writing reproducible documents - Word output</a>
+<a href="practicals/4_versioncontrol.html">Practical 4: Version control</a>
 </div>
 </div>
 <a href="https://github.com/dossag">
@@ -2448,10 +2448,22 @@ Worksheets
 
 
 <div class="d-article">
+<h1 id="basic-info">Basic info</h1>
 <p>Who: <a href="https://dossag.github.io/">G.G.O Dossa</a><br />
-When: 9am-5:30 pm every day from November 2-4, 2021<br />
+When: 9am-5:30 pm every day from November 2-3, 2021<br />
 Where: <a href="http://english.xtbg.cas.cn/">XTBG</a><br />
 <!-- Syllabus: [click here](syllabus.html)   --> <!-- Upcoming lectures and assignments: [click here](schedule.html)   --></p>
+<h1 id="workshop-introduction">Workshop introduction</h1>
+<p>The following is the tentative outline of a two day workshop that will be held in Xishuangbanna Tropical Botanical Garden <a href="http://english.xtbg.cas.cn/">(XTBG)</a> from <strong>November 02-03 2021</strong>. The purpose of this workshop is to get participants familiar with the concept of <strong><em>reproducible science</em></strong> that is surprisingly not commonly taught but which is becoming a requirement for better collaboration (not only with others but with oneself through time) and for credible science. At the end of this workshop, attendees should be familiar with tools use to achieve reproducible science, will be more confident with themselves, and be inclined to adopt these tools which will ease their collaboration with themselves as well as others. This course consists of four main parts which aim to putting everything from data to final report including r code and some interpretations and also exercises as step by step work me through method. This course will be mainly taught by Dossa G.G.O. <a href="mailto:dossa@xtbg.org.cn">click here to email me</a>. Dossa teaches this section yearly at the postgraduate Advanced Fieldcourse in Ecology and Conservation – XTBG <a href="https://www.pfs-tropasia.org/">AFEC-X</a> for the past two years.</p>
+<p><strong><em>Who should attend this course?</em></strong></p>
+<p>Anyone who carries out research either as student, or research staff and seeks guidance to manage data efficiently, to improve peers credibility in their research output, and is keen to make science solid and credible. Consider thinking about the following questions:</p>
+<ul>
+<li>Have you ever worked collaboratively with others, and received multiple comments that you needed to deal with?</li>
+<li>Have you been ever asked by your collaborators/supervisor to go back to previous version of your manuscripts/analysis/ results?</li>
+<li>Have you ever thought that you finalized an analysis but to realize a mistake was in the data file?</li>
+<li>Have you ever spent endless time to explain your past / current projects to your collaborators (including yourself) but realize you even do not remember what you did at some point or why you did certain things?</li>
+<li>Have you ever copied a table from R/SPSS/Minitab/SAS to excel, and subsequently from Excel to your word processing document? And most annoyingly, you need to repeat these steps whenever anything has changed in the analysis or code.</li>
+</ul>
 <h1 id="timeline">Timeline</h1>
 <ul>
 <li>Motivations [<a href="slides/0_introduction.html">lecture</a>]]</li>
@@ -2462,19 +2474,25 @@ Where: <a href="http://english.xtbg.cas.cn/">XTBG</a><br />
 <li>Take-home messages [<a href="slides/5_conclusion.html">lecture</a> | <a href="">video</a>]</li>
 </ul>
 <h1 id="requirements">Requirements</h1>
-<ul>
-<li><p>Download and install <a href="https://git-scm.com/downloads">Git</a>.</p></li>
-<li><p>You will need a GitHub account, you can easily set up a free account <a href="https://github.com/">here</a>.</p></li>
-<li><p>Install <a href="https://cloud.r-project.org/"><code>R</code></a> and <a href="https://rstudio.com/products/rstudio/download/#download"><code>RStudio</code></a></p></li>
-<li><p>Have Git, GitHub and RStudio talk to each other following <a href="https://inbo.github.io/git-course/course_rstudio.html#222_configuration">these guidelines (section 2.2.2 Configuration only)</a>.</p></li>
-<li><p>Install the following <code>R</code> packages: <code>tidyverse</code>, <code>sf</code>, <code>emo</code>, <code>janitor</code>, <code>palmerpenguins</code>, <code>usethis</code> and <code>lubridate.</code> You can install them all at once by running the following code in the <code>R</code> command line:</p></li>
-</ul>
+<p>Attendees are required to install the following software beforehand</p>
+<p>1- <a href="https://git-scm.com/downloads">Git</a></p>
+<p>2- <a href="https://github.com/">Create a Github account on</a></p>
+<p>3- <a href="https://desktop.github.com/">Download a Github desktop</a></p>
+<p>4- <a href="https://cran.r-project.org/">Download and install R</a></p>
+<p>5- <a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio</a></p>
+<p>6- Have Git, GitHub and RStudio talk to each other following <a href="https://inbo.github.io/git-course/course_rstudio.html#222_configuration">these guidelines (section 2.2.2 Configuration only)</a>.</p>
+<p>7- Install the following <code>R</code> packages: <code>tidyverse</code>, <code>sf</code>, <code>emo</code>, <code>janitor</code>, <code>palmerpenguins</code>, <code>usethis</code> and <code>lubridate.</code> You can install them all at once by running the following code in the <code>R</code> command line:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"tidyverse"</span>, <span class='st'>"sf"</span>, <span class='st'>"emo"</span>, <span class='st'>"janitor"</span>, <span class='st'>"palmerpenguins"</span>, <span class='st'>"usethis"</span>, <span class='st'>"lubridate"</span><span class='op'>)</span><span class='op'>)</span>
 </code></pre>
 </div>
 </div>
+<p>Below are books you can read at your spare time not required to read before the course.</p>
+<p>8- <a href="https://orchid00.github.io/actions_sandbox/">Book about Github</a></p>
+<p>9- <a href="https://r-graphics.org/">Ggplot2 second edition</a></p>
+<p>10- <a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown book</a></p>
+<p>Also kindly read the two following documents: (i) <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7"><strong><em>Five selfish reasons</em></strong></a> and (ii) <a href="https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf"><strong><em>Reproducible code</em></strong></a>.</p>
 <h2 class="appendix" id="corrections">Corrections</h2>
 <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/dossag/reproducible-science-afec-X-2021/issues">create an issue</a> on the source repository.</p>
 <h2 class="appendix" id="reuse">Reuse</h2>

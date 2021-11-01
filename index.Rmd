@@ -40,12 +40,12 @@ Anyone who carries out research either as student, or research staff and seeks g
 
 # Timeline
 
-* Motivations [[lecture](slides/0_introduction.html)]]
-* Manipulating data in the `tidyverse` [[lecture](slides/3_dplyr.html) | [practical](practicals/1_datamanipulation.html) | [solutions](practicals/1_datamanipulation_solution.html) | [video]()]
-* Visualising data in the `tidyverse` [[lecture](slides/4_ggplot.html) | [practical](practicals/2_datavisualisation.html) | [solutions](practicals/2_datavisualisation_solution.html) | [video]()]
-* Writing dynamic and reproducible documents with `R Markdown` [[lecture](slides/2_markdown.html) | [practical](practicals/3_rmarkdown.html) | [solutions](practicals/3_rmarkdownsolution.Rmd) | [video]()]
-* Versioning with `Git` and `GitHub` in `RStudio` [[lecture](slides/1_github.html) | [practical](practicals/4_versioncontrol.html) | [video]()]
-* Take-home messages [[lecture](slides/5_conclusion.html) | [video]()]
+* Motivations [[lecture]()]]
+* Manipulating data in the `tidyverse` [[lecture]() | [practical]() | [solutions]() | [video]()]
+* Visualising data in the `tidyverse` [[lecture]() | [practical]() | [solutions]() | [video]()]
+* Writing dynamic and reproducible documents with `R Markdown` [[lecture]() | [practical]() | [solutions]() | [video]()]
+* Versioning with `Git` and `GitHub` in `RStudio` [[lecture]() | [practical]() | [video]()]
+* Take-home messages [[lecture]() | [video]()]
 
 # Requirements
 

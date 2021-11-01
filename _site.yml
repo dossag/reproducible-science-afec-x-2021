@@ -31,25 +31,25 @@ navbar:
     - text: "Worksheets"
       menu:
         - text: "Practical 1: Manipulating data"
-          href: docs/practicals/1_datamanipulation.html
+          href: practicals/1_datamanipulation.html
         - text: "Practical 1: Manipulating data - Solutions"
-          href: docs/practicals/1_datamanipulation_solution.html
+          href: practicals/1_datamanipulation_solution.html
         - text: "Practical 2: Visualizing data"
-          href: docs/practicals/2_datavisualisation.html
+          href: practicals/2_datavisualisation.html
         - text: "Practical 2: Visualizing data - Solutions"
-          href: docs/practicals/2_datavisualisation_solution.html
+          href: practicals/2_datavisualisation_solution.html
         - text: "Practical 3: Writing reproducible documents"
-          href: docs/practicals/3_rmarkdown.html
+          href: practicals/3_rmarkdown.html
         - text: "Practical 3: Writing reproducible documents - Solutions"
-          href: docs/practicals/3_rmarkdownsolution.Rmd
+          href: practicals/3_rmarkdownsolution.Rmd
         - text: "Practical 3: Writing reproducible documents - Html output"
-          href: docs/practicals/3_rmarkdownsolution.html
+          href: practicals/3_rmarkdownsolution.html
         - text: "Practical 3: Writing reproducible documents - PDF output"
-          href: docs/practicals/3_rmarkdownsolution.pdf
+          href: practicals/3_rmarkdownsolution.pdf
         - text: "Practical 3: Writing reproducible documents - Word output"
-          href: docs/practicals/3_rmarkdownsolution.docx
+          href: practicals/3_rmarkdownsolution.docx
         - text: "Practical 4: Version control"
-          href: docs/practicals/4_versioncontrol.html
+          href: practicals/4_versioncontrol.html
     - icon: fab fa-github
       href: https://github.com/dossag
 output: distill::distill_article

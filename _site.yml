@@ -17,39 +17,39 @@ navbar:
     - text: "Slides"
       menu:
         - text: "Motivations"
-          href: slides/0_introduction.html
+          href: 
         - text: "Part 1: Manipulating data"
-          href: slides/3_dplyr.html
+          href: 
         - text: "Part 2: Visualising data"
-          href: slides/4_ggplot.html
+          href: 
         - text: "Part 3: Writing reproducible documents"
-          href: slides/2_markdown.html
+          href: 
         - text: "Part 4: Versioning"
-          href: slides/1_github.html
+          href: 
         - text: "Take-home messages"
-          href: slides/5_conclusion.html
+          href: 
     - text: "Worksheets"
       menu:
         - text: "Practical 1: Manipulating data"
-          href: practicals/1_datamanipulation.html
+          href: 
         - text: "Practical 1: Manipulating data - Solutions"
-          href: practicals/1_datamanipulation_solution.html
+          href: 
         - text: "Practical 2: Visualizing data"
-          href: practicals/2_datavisualisation.html
+          href: 
         - text: "Practical 2: Visualizing data - Solutions"
-          href: practicals/2_datavisualisation_solution.html
+          href: 
         - text: "Practical 3: Writing reproducible documents"
-          href: practicals/3_rmarkdown.html
+          href: 
         - text: "Practical 3: Writing reproducible documents - Solutions"
-          href: practicals/3_rmarkdownsolution.Rmd
+          href: 
         - text: "Practical 3: Writing reproducible documents - Html output"
-          href: practicals/3_rmarkdownsolution.html
+          href: 
         - text: "Practical 3: Writing reproducible documents - PDF output"
-          href: practicals/3_rmarkdownsolution.pdf
+          href: 
         - text: "Practical 3: Writing reproducible documents - Word output"
-          href: practicals/3_rmarkdownsolution.docx
+          href: 
         - text: "Practical 4: Version control"
-          href: practicals/4_versioncontrol.html
+          href: 
     - icon: fab fa-github
       href: https://github.com/dossag
 output: distill::distill_article

@@ -78,7 +78,7 @@ Below are books you can read at your spare time not required to read before the 
 
 10-	[R Markdown book](https://bookdown.org/yihui/rmarkdown-cookbook/)
 
-Also kindly read the two following documents: (i) [***Five selfish reasons***](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7) and (ii) [***Reproducible code***](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf).
+Also kindly read the two following documents prior to start of the workshop: (i) [***Five selfish reasons***](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7) and (ii) [***Reproducible code***](https://www.britishecologicalsociety.org/wp-content/uploads/2019/06/BES-Guide-Reproducible-Code-2019.pdf).
 
 
 

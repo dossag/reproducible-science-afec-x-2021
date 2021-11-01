@@ -16,8 +16,8 @@ navbar:
       href: index.html
     - text: "Slides"
       menu:
-        - text: "Motivations"
-          href: 
+        - text: "Motivations and intro"
+          href: docs/Module1_introduction.html
         - text: "Part 1: Manipulating data"
           href: 
         - text: "Part 2: Visualising data"

@@ -581,5 +581,15 @@ class: inverse, center, middle
 # Books
 
 ![](assets/img/books.png)
+---
+class: center, middle
+
+# Thank you for listening!
+
+Any questions now or email me at [**dossa@xtbg.org.cn**](http://people.ucas.edu.cn/~Dossa?language=en)
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
 
 

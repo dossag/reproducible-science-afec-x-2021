@@ -26,8 +26,8 @@ navbar:
           href: slides/Module4_Data_visualization_ggplot2.html
         - text: "Module5: Literate statistical programming: `knitr`"
           href: slides/Module5_Literate_statistical_programming_knitr.html
-        - text: "Part 4: Versioning"
-          href: 
+        - text: "Module6: R Markdown"
+          href: slides/Module6_markdown.html
         - text: "Take-home messages"
           href: 
     - text: "Worksheets"

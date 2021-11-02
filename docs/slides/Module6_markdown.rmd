@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Reproducible science workshop: Module6</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Gbadamassi G.O. Dossa" />
-    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
-
-# Reproducible science workshop: Module6
-## Markdown
-### <a href="https://scholar.google.com/citations?user=w20AkZcAAAAJ&amp;hl=en">Gbadamassi G.O. Dossa</a>
-### Xishuangbanna Tropical Botanical Garden, XTBG-CAS
-### 2021/10/1 (updated: 2021-11-03)
-
+---
+title: "Reproducible science workshop: Module6"
+subtitle: "Markdown"
+author: "[Gbadamassi G.O. Dossa](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
+institute: "Xishuangbanna Tropical Botanical Garden, XTBG-CAS"
+date: "2021/10/1 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    #chakra: libs/remark-latest.min.js Able this if you want to make slide to work offline
+    #seal: false ## To set off the first slide renders by xaringan
+    nature:
+      #ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
 ---
 
-
-
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.path = 'assets/chunks/', cache.path = "assets/cache/", dpi = 300)
+library(tidyverse)
+theme_set(theme_grey(base_size = 16))
+library(emo)
+```
 
 # Credits
 
@@ -117,9 +117,9 @@ class: inverse, center, middle
 ---
 # Websites that use Markdown
 
-- GitHub &lt;https://github.com/&gt;
-- StackOverflow &lt;https://stackoverflow.com/&gt;
-- HackMD &lt;https://hackmd.io&gt;
+- GitHub <https://github.com/>
+- StackOverflow <https://stackoverflow.com/>
+- HackMD <https://hackmd.io>
 - Many more
 
 
@@ -184,8 +184,7 @@ class: inverse, center, middle
 ---
 # Tables
 
-
-```md
+```{md}
 | header A | header B |
 |---------:|:---------|
 | data     | data     |
@@ -205,7 +204,7 @@ Table:title
 ---
 # R Markdown Reference Guide
 
-&lt;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&gt; 
+<https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf> 
 
 .center[![](assets/img/refguide.png)]
 
@@ -236,7 +235,7 @@ class: inverse, center, middle
 ---
 # Inline code
 
-- Place code in a sentence with 
+- Place code in a sentence with `r #code`
 - R Markdown replaces code with results
 
 .center[![](assets/img/inline.png)]
@@ -305,7 +304,7 @@ in output
 - You may overwrite the default for each chunk
 
 
-- For chunk options, check out &lt;https://yihui.name/knitr/options/&gt;
+- For chunk options, check out <https://yihui.name/knitr/options/>
 
 
 ---
@@ -323,46 +322,13 @@ in output
 ---
 # Including tables
 
-
-```r
+```{r}
 # cars is a built-in-to-R data set of cars
 # and their stopping distances
-cars %&gt;% 
-  head(5) %&gt;% 
+cars %>% 
+  head(5) %>% 
   knitr::kable(format = "html", caption = "A kable table")
 ```
-
-&lt;table&gt;
-&lt;caption&gt;A kable table&lt;/caption&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:right;"&gt; speed &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; dist &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 10 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 16 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 
 - The [`kable`](https://www.rdocumentation.org/packages/knitr/versions/1.21/topics/kable) package is often used with the [`kableExtra`](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) package
 - A number of other packages are available for making pretty tables, see [rmarkdown.rstudio.com](https://rmarkdown.rstudio.com/lesson-7.html)
@@ -371,7 +337,7 @@ cars %&gt;%
 ---
 # R Markdown Reference Guide
 
-&lt;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&gt; 
+<https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf> 
 
 .center[![](assets/img/knitr.png)]
 
@@ -415,7 +381,7 @@ class: inverse, center, middle
 ---
 # Knit
 
-&lt;div style="width:100%;height:0;padding-bottom:61%;position:relative;"&gt;&lt;iframe src="https://giphy.com/embed/3oEhmHmWP3Y9wQxoli" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;
+<div style="width:100%;height:0;padding-bottom:61%;position:relative;"><iframe src="https://giphy.com/embed/3oEhmHmWP3Y9wQxoli" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p>
 
 
 ---
@@ -440,9 +406,9 @@ class: inverse, center, middle
 # Managing bibliography
 
 --
-&lt;ol&gt;
-&lt;li&gt; Put references in a plain text file with the extension **.bib**, in **BibTex** format (my advice: use [Zotero](https://www.zotero.org))
-&lt;/ol&gt;
+<ol>
+<li> Put references in a plain text file with the extension **.bib**, in **BibTex** format (my advice: use [Zotero](https://www.zotero.org))
+</ol>
 ```bibtex
 *@article{Shea2014,
   author =        {Shea, Nicholas and Boldt, Annika},
@@ -456,9 +422,9 @@ class: inverse, center, middle
 ```
 
 --
-&lt;ol start = 2&gt;
-&lt;li&gt;Reference this file in your YAML header
-&lt;/ol&gt;
+<ol start = 2>
+<li>Reference this file in your YAML header
+</ol>
 ```yaml
 ---
 title: "Citation test"
@@ -469,9 +435,9 @@ output: html_document
 
 ---
 # Citations
-&lt;ol start = 3&gt;
-&lt;li&gt;In your text, citations go inside brackets and separated by semicolons
-&lt;/ol&gt;
+<ol start = 3>
+<li>In your text, citations go inside brackets and separated by semicolons
+</ol>
 
 --
 .pull-left[
@@ -487,9 +453,9 @@ Blah blah (Shea et al. 2014; Lottridge et al. 2012).
 ---
 class: larger-body
 # Citations
-&lt;ol start = 3&gt;
-&lt;li&gt;In your text, citations go inside brackets and separated by semicolons
-&lt;/ol&gt;
+<ol start = 3>
+<li>In your text, citations go inside brackets and separated by semicolons
+</ol>
 
 
 .pull-left[
@@ -515,9 +481,9 @@ Blah blah (see Shea et al. 2014, 33–35; also Wu 2016, ch. 1).
 ---
 class: larger-body
 # Citations
-&lt;ol start = 3&gt;
-&lt;li&gt;In your text, citations go inside brackets and separated by semicolons
-&lt;/ol&gt;
+<ol start = 3>
+<li>In your text, citations go inside brackets and separated by semicolons
+</ol>
 
 
 .pull-left[
@@ -548,12 +514,14 @@ Blah blah (see Shea et al. 2014, 33–35; also Wu 2016, ch. 1).
 For an easy way to insert citations, try the [`citr`](https://github.com/crsh/citr) RStudio add-in.
 
 
-&lt;img src="https://raw.githubusercontent.com/crsh/citr/master/tools/images/addin_demo.gif" width="75%" /&gt;
+```{r, out.width="75%", echo = FALSE}
+knitr::include_graphics("https://raw.githubusercontent.com/crsh/citr/master/tools/images/addin_demo.gif")
+```
 
 ---
 # R Markdown Reference Guide
 
-&lt;https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf&gt; 
+<https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf> 
 
 .center[![](assets/img/pandoc.png)]
 
@@ -572,21 +540,21 @@ class: inverse, center, middle
 ---
 # Let's have a tour 
 
-&lt;div style="width:100%;height:0;padding-bottom:61%;position:relative;"&gt;&lt;iframe src="https://awesome-rmarkdown-2019.netlify.app/imgs/gallery.gif" width="100%" height="100%" style="position:absolute" frameBorder="0"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;
+<div style="width:100%;height:0;padding-bottom:61%;position:relative;"><iframe src="https://awesome-rmarkdown-2019.netlify.app/imgs/gallery.gif" width="100%" height="100%" style="position:absolute" frameBorder="0"></iframe></div><p>
 
-R Markdown gallery &lt;https://rmarkdown.rstudio.com/gallery.html&gt;
+R Markdown gallery <https://rmarkdown.rstudio.com/gallery.html>
 
 
 ---
 # Websites
 
-- Use package `blogdown` &lt;https://bookdown.org/yihui/blogdown/&gt;
+- Use package `blogdown` <https://bookdown.org/yihui/blogdown/>
 
-- Customize with Hugo &lt;https://themes.gohugo.io/&gt;
+- Customize with Hugo <https://themes.gohugo.io/>
 
 - Deploy via GitHub pages or Netlify
 
-- See a video tutorial [here](https://www.youtube.com/watch?v=4OUEss2XF7E&amp;t=4s)
+- See a video tutorial [here](https://www.youtube.com/watch?v=4OUEss2XF7E&t=4s)
 
 
 ---
@@ -613,128 +581,15 @@ class: inverse, center, middle
 # Books
 
 ![](assets/img/books.png)
+---
+class: center, middle
+
+# Thank you for listening!
+
+Any questions now or email me at [**dossa@xtbg.org.cn**](http://people.ucas.edu.cn/~Dossa?language=en)
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
 
 
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>

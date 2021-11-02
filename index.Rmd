@@ -43,8 +43,6 @@ Anyone who carries out research either as student, or research staff and seeks g
 * Motivations and intro [[Module1](slides/Module1_introduction.html)]]
 * Bridging the gap among actors [[Module2](slides/Module2_Bridging_the_gap_among_actors.html) | [practical]() | [solutions]() | [video]()]
 * Dealing with data analysis in the `tidyverse` [[Module3](slides/Module3_Dealing_with_data_analysis.html) | [practical]() | [solutions]() | [video]()]
-
-* Visualising data in the `tidyverse` [[Module]() | [practical]() | [solutions]() | [video]()]
 * Writing dynamic and reproducible documents with `R Markdown` [[Module]() | [practical]() | [solutions]() | [video]()]
 * Versioning with `Git` and `GitHub` in `RStudio` [[Module]() | [practical]() | [video]()]
 * Take-home messages [[Module]() | [video]()]

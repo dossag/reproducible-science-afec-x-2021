@@ -32,14 +32,14 @@ navbar:
           href: 
     - text: "Worksheets"
       menu:
-        - text: "Practical 1: Manipulating data"
-          href: 
-        - text: "Practical 1: Manipulating data - Solutions"
-          href: 
-        - text: "Practical 2: Visualizing data"
-          href: 
-        - text: "Practical 2: Visualizing data - Solutions"
-          href: 
+        - text: "Exercise 1: Tidyverse data manipulation"
+          href: Exercise_1_Tidyverse_Data_manipulation.html
+        - text: "Exercise 1: Tidyverse data manipulation - Solutions"
+          href: Excercise_1_Data_manipulation_solution.html
+        - text: "Exercise 2: Tidyverse ggplot2 data visualisation"
+          href: Exercise_2_datavisualisation.html
+        - text: "Exercise 2: Tidyverse ggplot2 data visualisation - Solutions"
+          href: Exercise_2_datavisualisation_solution.html
         - text: "Practical 3: Writing reproducible documents"
           href: 
         - text: "Practical 3: Writing reproducible documents - Solutions"

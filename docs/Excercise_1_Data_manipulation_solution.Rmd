@@ -27,7 +27,7 @@ library(tidyverse)
 
 # Question 1a-a 
 
-
+Display the overview of the data penguins
 ```{r}
 penguins # display data
 ```
@@ -38,7 +38,10 @@ penguins # display data
 
 
 ```{r}
-penguins %>% glimpse() # display data
+penguins %>% # This %>% is for then  
+  glimpse() # display data
+
+summary(penguins)
 ```
 
 # Question 1b
@@ -60,11 +63,16 @@ dat_billmean
 
 
 ```{r}
+
+dat_na<-penguins %>%
+  filter(!is.na(sex))
+dim(dat_na)
 dat <- penguins %>%
 # filter out missing sex
   filter(!is.na(sex)) %>% 
 # select variables
   select(species, island, bill_length_mm, body_mass_g) 
+dat
 ```
 
 # Question 2a
@@ -157,6 +165,7 @@ dat %>%
 
 ```{r}
 # all at once, through column format selection
+
 dat %>% 
   group_by(species) %>% 
   summarize(across(where(is.numeric), mean))

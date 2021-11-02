@@ -16,14 +16,14 @@ navbar:
       href: index.html
     - text: "Slides"
       menu:
-        - text: "Motivations and intro"
+        - text: "Module1:Motivations and intro"
           href: slides/Module1_introduction.html
         - text: "Module2 Bridging the gap among actors"
           href: slides/Module2_Bridging_the_gap_among_actors.html
         - text: "Module3: Data analysis with tidyverse"
           href: slides/Module3_Dealing_with_data_analysis.html
-        - text: "Module3: Visualising data"
-          href: 
+        - text: "Module4: Data visualisation"
+          href: slides/Module4_Data_visualization_ggplot2.html
         - text: "Part 3: Writing reproducible documents"
           href: 
         - text: "Part 4: Versioning"

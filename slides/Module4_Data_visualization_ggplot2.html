@@ -4,7 +4,7 @@
     <title>Reproducible science: Module 4</title>
     <meta charset="utf-8" />
     <meta name="author" content="Gbadamassi G.O. Dossa" />
-    <script src="libs/header-attrs-2.10/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 ## Data visualization in Tidyverse: the power of ggplot2
 ### <a href="https://scholar.google.com/citations?user=w20AkZcAAAAJ&amp;hl=en">Gbadamassi G.O. Dossa</a>
 ### Xishuangbanna Tropical Botanical Garden, XTBG-CAS
-### 2021/09/28 (updated: 2021-10-20)
+### 2021/09/28 (updated: 2021-11-02)
 
 ---
 
@@ -26,7 +26,7 @@ class: center
 The content of this module are based on materials from:
 
 .pull-right[
-![olivier gimenez](olivier gimenez.png)
+![olivier gimenez](img/olivier gimenez.png)
 ]
 .pull-right[
 [olivier gimenez's materials](https://oliviergimenez.github.io/)
@@ -51,7 +51,7 @@ class: center
 then this notion of layer would be familiar to you.
 ]
 
-&lt;img src="ggplot2_logo.png" width="20%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/ggplot2_logo.png" width="20%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: center
@@ -67,7 +67,7 @@ class: center
  **Aesthetics**    | The aesthetics of the geometric object
                    | (e.g., color, size, shape)
 
-&lt;img src="ggplot2_logo.png" width="20%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/ggplot2_logo.png" width="20%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: center
@@ -126,6 +126,17 @@ destfile &lt;- "twitter_cit_data.csv"
 # Apply download.file function in R to download from url
 download.file(url, destfile)
 library(tidyverse)
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 4.1.1
+```
+
+```
+## Warning: package 'readr' was built under R version 4.1.1
+```
+
+```r
 # Read the data file with read_csv() and save with name "citations_raw"
 citations_raw&lt;-read_csv(file="twitter_cit_data.csv")
 citations &lt;- rename(citations_raw,
@@ -177,7 +188,7 @@ class: center
 scatterplot
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scaterplot2-1.png" width="50%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scaterplot2-1.png" width="50%" /&gt;
 ]
 
 ---
@@ -194,7 +205,7 @@ scatter_col&lt;-citations %&gt;%
 scatter_col
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scattercol-1.png" width="40%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scattercol-1.png" width="40%" /&gt;
 ]
 
 ---
@@ -211,7 +222,7 @@ scatter_spcol&lt;-citations %&gt;%
 scatter_spcol
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterspcol-1.png" width="40%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterspcol-1.png" width="40%" /&gt;
 ]
 
 ---
@@ -261,7 +272,7 @@ scatter_ecol&lt;-citations_ecology %&gt;%
 scatter_ecol
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/fewjournals-1.png" width="40%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/fewjournals-1.png" width="40%" /&gt;
 ]
 
 ---
@@ -279,7 +290,7 @@ scatter_line&lt;-citations_ecology %&gt;%
 scatter_line
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterline-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterline-1.png" width="30%" /&gt;
 ]
 
 ---
@@ -298,7 +309,7 @@ scatter_line2&lt;-citations_ecology %&gt;%
 scatter_line2
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterline2-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterline2-1.png" width="30%" /&gt;
 ]
 ---
 class: center
@@ -317,7 +328,7 @@ scatter_line3&lt;-citations_ecology %&gt;%
 scatter_line3
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterline3-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterline3-1.png" width="30%" /&gt;
 ]
 ---
 class: center
@@ -336,7 +347,7 @@ scatter_line4&lt;-citations_ecology %&gt;%
 scatter_line4
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterline4-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterline4-1.png" width="30%" /&gt;
 ]
 
 ---
@@ -356,7 +367,7 @@ scatter_line5&lt;-citations_ecology %&gt;%
 scatter_line5
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/scatterline5-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/scatterline5-1.png" width="30%" /&gt;
 ]
 
 ---
@@ -384,7 +395,7 @@ histo&lt;-citations_ecology %&gt;%
 histo
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/histogram-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/histogram-1.png" width="30%" /&gt;
 
 ]
 
@@ -401,7 +412,7 @@ histo2&lt;-citations_ecology %&gt;%
 histo2
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/histogram2-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/histogram2-1.png" width="30%" /&gt;
 ]
 ---
 class: center
@@ -416,7 +427,7 @@ histo3&lt;-citations_ecology %&gt;%
 histo3
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/histogram3-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/histogram3-1.png" width="30%" /&gt;
 ]
 ---
 class: center
@@ -434,7 +445,7 @@ histo4&lt;-citations_ecology %&gt;%
 histo4
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/histogram4-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/histogram4-1.png" width="30%" /&gt;
 ]
 
 ---
@@ -455,7 +466,7 @@ histo5&lt;-citations_ecology %&gt;%
 histo5
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/histogram5-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/histogram5-1.png" width="30%" /&gt;
 ]
 ---
 class: center
@@ -475,7 +486,7 @@ boxpl&lt;-citations_ecology %&gt;%
 boxpl
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/boxplot-1.png" width="30%" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/boxplot-1.png" width="30%" /&gt;
 ]
 
 ---
@@ -494,7 +505,7 @@ citations_ecology %&gt;%
   scale_y_log10()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-6-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-6-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -509,7 +520,7 @@ citations_ecology %&gt;%
   scale_y_log10()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-7-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-7-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -524,7 +535,7 @@ citations_ecology %&gt;%
   scale_y_log10()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-8-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-8-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -542,7 +553,7 @@ citations_ecology %&gt;%
 * labs(x = "")
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-9-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-9-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -562,7 +573,7 @@ citations_ecology %&gt;%
   labs(x = "")
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -583,7 +594,7 @@ citations_ecology %&gt;%
   labs(x = "")
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-11-1.png" width="270cm" height="270cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-11-1.png" width="270cm" height="270cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -599,7 +610,7 @@ citations %&gt;%
 * geom_col()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-12-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-12-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -614,7 +625,7 @@ citations %&gt;%
   geom_col()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-13-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-13-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -630,7 +641,7 @@ citations %&gt;%
   geom_col()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-14-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-14-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -647,7 +658,7 @@ citations %&gt;%
   labs(x = "counts", y = "")
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-15-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-15-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -671,7 +682,7 @@ citations_ecology %&gt;%
   scale_x_log10()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-16-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-16-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -686,7 +697,7 @@ citations_ecology %&gt;%
   scale_x_log10()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-17-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-17-1.png" width="350cm" height="350cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -703,7 +714,7 @@ citations_ecology %&gt;%
 * theme_bw()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-18-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-18-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -720,7 +731,7 @@ citations_ecology %&gt;%
 * theme_classic()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-19-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-19-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 ---
 class: center
@@ -737,7 +748,7 @@ citations_ecology %&gt;%
 * theme_dark()
 ```
 
-&lt;img src="Module-4-Data-visualization-in-Tidyverse-the-power-of-ggplot2_files/figure-html/unnamed-chunk-20-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
+&lt;img src="Module4_Data_visualization_ggplot2_files/figure-html/unnamed-chunk-20-1.png" width="300cm" height="300cm" style="display: block; margin: auto;" /&gt;
 ]
 
 
@@ -757,7 +768,7 @@ class: center
 .left[
 - [Interactive](https://dreamrs.github.io/esquisse/) ggplot2 visualizations]
 
-&lt;img src="ggplot2_logo.png" width="30%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/ggplot2_logo.png" width="30%" style="display: block; margin: auto;" /&gt;
 
 
 ---
@@ -784,13 +795,13 @@ Material of the stat545 course on [Data wrangling, exploration, and analysis wit
 class: center
 # The [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
 
-&lt;img src="ggplot1.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/ggplot1.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: center
 # The [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
 
-&lt;img src="ggplot2.png" width="90%" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/ggplot2.png" width="90%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: center, middle

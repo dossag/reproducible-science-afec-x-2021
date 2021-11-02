@@ -18,7 +18,7 @@ navbar:
       menu:
         - text: "Motivations and intro"
           href: slides/Module1_introduction.html
-        - text: "Part 1: Manipulating data"
+        - text: "Module2_Bridging_the_gap_among_actors"
           href: slides/Module2_Bridging_the_gap_among_actors.html
         - text: "Part 2: Visualising data"
           href: 
@@ -30,7 +30,7 @@ navbar:
           href: 
     - text: "Worksheets"
       menu:
-        - text: "Practical 1: Manipulating data"
+        - text: "Module2_Bridging_the_gap_among_actors"
           href: 
         - text: "Practical 1: Manipulating data - Solutions"
           href: 

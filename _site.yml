@@ -19,7 +19,7 @@ navbar:
         - text: "Motivations and intro"
           href: slides/Module1_introduction.html
         - text: "Part 1: Manipulating data"
-          href: 
+          href: slides/Module2_Bridging_the_gap_among_actors.html
         - text: "Part 2: Visualising data"
           href: 
         - text: "Part 3: Writing reproducible documents"

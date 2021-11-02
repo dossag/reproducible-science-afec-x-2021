@@ -20,7 +20,9 @@ navbar:
           href: slides/Module1_introduction.html
         - text: "Module2 Bridging the gap among actors"
           href: slides/Module2_Bridging_the_gap_among_actors.html
-        - text: "Part 2: Visualising data"
+        - text: "Module3: Data analysis with tidyverse"
+          href: slides/Module3_Dealing_with_data_analysis.html
+        - text: "Module3: Visualising data"
           href: 
         - text: "Part 3: Writing reproducible documents"
           href: 

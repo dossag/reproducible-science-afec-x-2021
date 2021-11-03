@@ -30,6 +30,8 @@ navbar:
           href: slides/Module6_markdown.html
         - text: "Module7: Version control Git and Github"
           href: slides/Module7_Version_control_git_github.html
+        - text: "Module7_extra: Extra class on git and Github"
+          href: slides/Module7_extra.pdf
         - text: "Module8: R project"
           href: 
         - text: "Module9: Reproducible: Good enough workflow"
@@ -49,7 +51,7 @@ navbar:
         - text: "Exercise 3: Writing reproducible documents - Solutions"
           href: Exercise_3_Building_your_own_RMardown_solution.html
         - text: "Exercise 4: Version control Git and Github"
-          href: Module7_extra.pdf
+          href: 
         - text: "Exercise 4: Writing reproducible documents - Html output"
           href: 
         - text: "Practical 3: Writing reproducible documents - PDF output"

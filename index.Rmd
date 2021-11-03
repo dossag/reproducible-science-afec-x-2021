@@ -46,9 +46,10 @@ Anyone who carries out research either as student, or research staff and seeks g
 * Dealing with data analysis in the `tidyverse` using `ggplot2` [[Module4](slides/Module4_Data_visualization_ggplot2.html) | [practical]() | [solutions]() | [video]()]
 * Literate statistical programming: `knitr` [[Module5](slides/Module5_Literate_statistical_programming_knitr.html) | [practical]() | [solutions]() | [video]()]
 * R Markdown [[Module6](slides/Module6_markdown.html) | [practical]() | [solutions]() | [video]()]
-* Writing dynamic and reproducible documents with `R Markdown` [[Module]() | [practical]() | [solutions]() | [video]()]
-* Versioning with `Git` and `GitHub` in `RStudio` [[Module]() | [practical]() | [video]()]
-* Take-home messages [[Module]() | [video]()]
+* Version control Git and Github [[Module7](slides/Module7_Version_control_git_github.html) | [practical]() | [solutions]() | [video]()]
+* Module8: R project [[Module]() | [practical]() | [video]()]
+* Module9: Reproducible: Good enough workflow [[Module]() | [video]()]
+
 
 # Requirements
 

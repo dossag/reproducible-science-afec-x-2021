@@ -44,11 +44,13 @@ navbar:
           href: Exercise_2_datavisualisation.html
         - text: "Exercise 2: Tidyverse ggplot2 data visualisation - Solutions"
           href: Exercise_2_datavisualisation_solution.html
-        - text: "Exercise3 : Building your own Rmarkdown document"
-          href: 
-        - text: "Practical 3: Writing reproducible documents - Solutions"
-          href: 
-        - text: "Practical 3: Writing reproducible documents - Html output"
+        - text: "Exercise 3 : Building your own Rmarkdown document"
+          href: Exercise_3_Building_your_own_RMardown.html
+        - text: "Exercise 3: Writing reproducible documents - Solutions"
+          href: Exercise_3_Building_your_own_RMardown_solution.html
+        - text: "Exercise 4: Version control Git and Github"
+          href: Module7_extra.pdf
+        - text: "Exercise 4: Writing reproducible documents - Html output"
           href: 
         - text: "Practical 3: Writing reproducible documents - PDF output"
           href: 

@@ -22,7 +22,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-In this current exercise, you are asked the following questions:
 
 ***Questions:***
 In this current exercise, you are asked:
@@ -100,7 +99,7 @@ Use := for left-aligned, :=: for centered, =: for right-aligned columns.
 Left alignment (:=)
 
 +--------+------+------------+-------------+
-|Names   |Sex   |Education   |Height (cm)  |
+|Names   |Sex   |Education   |Height (m)   |
 +:=======+:=====+:===========+:============+ 
 |Dossa   |M     |Ph.D.       |1.86         |
 +--------+------+------------+-------------+
@@ -112,7 +111,7 @@ Left alignment (:=)
 Right alignment (=:)
 
 +--------+------+------------+-------------+
-|Names   |Sex   |Education   |Height (cm)  |
+|Names   |Sex   |Education   |Height (m)   |
 +=======:+=====:+============+============:+ 
 |Dossa   |M     |Ph.D.       |1.86         |
 +--------+------+------------+-------------+
@@ -121,10 +120,10 @@ Right alignment (=:)
 |CaoKF   |M     |Ph.D.       |1.65         |
 +--------+------+------------+-------------+
 
-Center alignment (=:)
+Center alignment (:=:)
 
 +--------+------+------------+-------------+
-|Names   |Sex   |Education   |Height (cm)  |
+|Names   |Sex   |Education   |Height (m)   |
 +:======:+:====:+:===========+:===========:+ 
 |Dossa   |M     |Ph.D.       |1.86         |
 +--------+------+------------+-------------+
@@ -135,10 +134,16 @@ Center alignment (=:)
 
 ## **Add an inline code for mean height**
 
-The average height of all members  of my group is `r round(mean(c(1.86, 1.82, 1.65)),3)`
+The average height of all members  of my group is `r round(mean(c(1.86, 1.82, 1.65)), 3)`
+
 
 
 ## **Table with RMarkdown table generator**
+|Names   |Sex   |Education   |height   |
+|---|---|---|---|
+|Dossa   |M   |P   |  300 |
+|Rhett   |M   | P  |  100 |
+|CaoKF   |M   | P  |90   |
 
 [R Markdown table generator](https://www.tablesgenerator.com/markdown_tables)
 
@@ -150,7 +155,7 @@ The average height of all members  of my group is `r round(mean(c(1.86, 1.82, 1.
 
 # **Q4: Reading paper** 
 
-I read an article entitled [**Five selfish reasons to work reproducibly**](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7) by *Markowetz* 
+I read an article entitled [**Five selfish reasons to work reproducibly**](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7) by _Markowetz_ 
 
 # **Q5: Conclusion**
 

@@ -1,6 +1,6 @@
 ---
 title: "Reproducible science workshop"
-Subtitle:"Exercise 3 Buildind your own RMarkdown Solution"
+Subtitle: "Exercise 3 Buildind your own RMarkdown Solution"
 author: "[**_Gbadamassi G.O. Dossa_**](https://scholar.google.com/citations?user=w20AkZcAAAAJ&hl=en)"
 date: (Created on Aug 31 2021 and last updated on `r format(Sys.time(), "%a %b %d %Y %H:%M:%S")`)
 output: 

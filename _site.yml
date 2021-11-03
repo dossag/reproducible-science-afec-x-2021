@@ -45,7 +45,7 @@ navbar:
         - text: "Exercise 2: Tidyverse ggplot2 data visualisation - Solutions"
           href: Exercise_2_datavisualisation_solution.html
         - text: "Exercise3 : Building your own Rmarkdown document"
-          href: Exercise3_Building_your_own_RMardown_solution.html
+          href: 
         - text: "Practical 3: Writing reproducible documents - Solutions"
           href: 
         - text: "Practical 3: Writing reproducible documents - Html output"

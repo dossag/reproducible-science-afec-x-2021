@@ -1,6 +1,6 @@
 ---
 title: "Reproducible science afec XTBG 2021"
-description: "A two-day afec on reproducible science"
+description: "A two-day module on reproducible science"
 site: distill::distill_website
 ---
 

@@ -51,7 +51,7 @@ navbar:
         - text: "Exercise 3: Writing reproducible documents - Solutions"
           href: Exercise_3_Building_your_own_RMardown_solution.html
         - text: "Exercise 4: Version control Git and Github"
-          href: 
+          href: Exercise_4_Version_control_git_github.html
         - text: "Exercise 4: Writing reproducible documents - Html output"
           href: 
         - text: "Practical 3: Writing reproducible documents - PDF output"

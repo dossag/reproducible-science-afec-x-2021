@@ -22,11 +22,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Module7-Exercise 4 Git Github Good enough workflow
+# Exercise 4 Git Github Good enough workflow
 
 ## Setting up Reproducible Workflow
 
 *This exercise was modified from [Rob Schick's materials](https://nicholas.duke.edu/people/staff/schick-phd) taught at a workshop at ESA 2017.*
+Please before you continue, kindly go to [workshop site](https://dossag.github.io/reproducible-science-afec-x-2021/) and download the Bahamas Marine Mammal Research Organization data set call bbmroData.csv under the menu worksheet *Exercise 4 bbmroData.csv*.
 
 Start by navigating to a folder that will serve as the host of the main repository, e.g. /rob/research/projects
 Once there, replicate this folder structure.
